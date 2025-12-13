@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&P Venturez | Web Presence Specialists</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Mock Content Styles */
+        .mock-browser {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            border: 1px solid #334155;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            background: #0f172a;
+        }
+
+        .browser-header {
+            background: #1e293b;
+            padding: 0.75rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-bottom: 1px solid #334155;
+        }
+
+        .dot {
+            width: 0.75rem;
+            height: 0.75rem;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="font-['Inter'] text-slate-200 antialiased bg-slate-900">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-slate-950/90 backdrop-blur text-white z-50 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- BRANDING -->
+                <div class="flex-shrink-0 font-bold text-xl tracking-tighter">
+                    <span class="text-blue-500">A&P</span> <span class="text-white">VENTUREZ</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#problems" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">Why Upgrade?</a>
+                        <a href="#portfolio" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">Portfolio</a>
+                        <a href="#pricing" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">Pricing</a>
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium transition shadow-lg shadow-blue-900/20">Get Audit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative bg-slate-900 h-screen flex items-center justify-center text-center px-4 border-b border-slate-800">
+        <!-- Abstract Background Shape -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+            <div class="absolute top-40 -left-20 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto space-y-8 pt-16">
+            <div class="inline-block bg-slate-800 rounded-full px-4 py-1.5 border border-slate-700 shadow-sm">
+                <span class="text-blue-400 text-xs font-bold uppercase tracking-wide">For Local Business Owners</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-tight">
+                IS YOUR BUSINESS <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">INVISIBLE ONLINE?</span>
+            </h1>
+            
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                If customers can't find you on Google Maps or load your site on their phone in 3 seconds, you are handing money to your competitors. <br><strong class="text-white">A&P Venturez fixes that.</strong>
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-lg shadow-lg shadow-blue-500/20 transition transform hover:-translate-y-1 border border-transparent">
+                    Get My Free Web Audit
+                </a>
+                <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg border border-slate-600 transition">
+                    See My Work
+                </a>
+            </div>
+            
+            <p class="text-sm text-slate-500 pt-4">
+                <i class="fas fa-check-circle text-green-500 mr-2"></i> No confusing tech jargon. Just results.
+            </p>
+        </div>
+    </header>
+
+    <!-- PAIN POINTS SECTION -->
+    <section id="problems" class="py-20 bg-slate-900 border-b border-slate-800 relative">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-full bg-blue-900/10 blur-3xl rounded-full -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Why "Good Enough" is Costing You Money</h2>
+                <p class="mt-4 text-slate-400">The digital world has changed. Has your business kept up?</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Card 1 -->
+                <div class="bg-slate-800/80 backdrop-blur p-8 rounded-2xl border border-slate-700 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-900/20 transition duration-300 group">
+                    <div class="w-12 h-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 text-red-400 text-2xl group-hover:scale-110 transition">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Not Mobile Friendly?</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Over 70% of local searches happen on phones. If users have to pinch and zoom to read your menu, they leave instantly.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-800/80 backdrop-blur p-8 rounded-2xl border border-slate-700 hover:border-orange-500/50 hover:shadow-2xl hover:shadow-orange-900/20 transition duration-300 group">
+                    <div class="w-12 h-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 text-orange-400 text-2xl group-hover:scale-110 transition">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Hidden on Maps?</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        If you aren't in the "Local Pack" (the top 3 map results), you are invisible. We optimize your profile to get you found.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-800/80 backdrop-blur p-8 rounded-2xl border border-slate-700 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-900/20 transition duration-300 group">
+                    <div class="w-12 h-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 text-purple-400 text-2xl group-hover:scale-110 transition">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Outdated Design?</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        An old website tells customers your business is tired or closed. A modern, clean site builds instant trust and authority.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SHOWCASE SECTION (STATIC) -->
+    <section id="portfolio" class="py-20 bg-slate-900 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-bold tracking-wide uppercase text-sm">Our Standard of Excellence</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">One Service. Any Style.</h2>
+                <p class="mt-4 text-slate-400">We don't use cookie-cutter templates. We build brands.</p>
+            </div>
+
+            <div class="space-y-24">
+                
+                <!-- EXAMPLE 1: LUXURY REAL ESTATE / CORPORATE -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="h-px bg-slate-700 flex-1"></div>
+                        <span class="text-amber-500 font-bold uppercase tracking-widest text-xs">Style 1: High-End Corporate</span>
+                        <div class="h-px bg-slate-700 flex-1"></div>
+                    </div>
+
+                    <!-- STATIC BROWSER MOCKUP 1 -->
+                    <div class="mock-browser">
+                        <div class="browser-header">
+                            <div class="dot bg-red-500"></div>
+                            <div class="dot bg-yellow-500"></div>
+                            <div class="dot bg-green-500"></div>
+                            <div class="ml-4 bg-slate-800 text-xs text-slate-400 px-3 py-1 rounded-full flex-grow text-center font-mono">luxe-estates.com</div>
+                        </div>
+                        <div class="relative bg-gray-900 overflow-hidden h-[500px]">
+                            <!-- Gradient & Light -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-black"></div>
+                            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-amber-600/20 rounded-full blur-[100px] -mr-32 -mt-32"></div>
+                            
+                            <!-- Navbar -->
+                            <div class="relative z-10 flex justify-between items-center p-8 border-b border-white/5">
+                                <div class="text-white font-playfair text-2xl tracking-widest font-bold">LUXE<span class="text-amber-500">ESTATES</span></div>
+                                <div class="hidden sm:flex gap-8 text-xs text-gray-400 font-bold tracking-widest uppercase">
+                                    <span>Residence</span>
+                                    <span>Commercial</span>
+                                    <span class="text-amber-500 border border-amber-500/30 px-3 py-1">Contact</span>
+                                </div>
+                            </div>
+                            <!-- Hero Content -->
+                            <div class="relative z-10 px-8 pt-16 max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center">
+                                <div class="space-y-6 md:w-1/2">
+                                    <div class="flex items-center gap-3"><div class="h-[1px] w-8 bg-amber-500"></div><div class="text-amber-500 text-[10px] font-bold tracking-[0.3em] uppercase">Architecture</div></div>
+                                    <h3 class="text-5xl font-playfair text-white leading-tight">Redefining <br><span class="italic text-slate-500 font-serif">Modern Living.</span></h3>
+                                    <button class="bg-amber-600 text-white text-xs px-6 py-3 font-bold tracking-widest hover:bg-amber-700 transition">VIEW COLLECTION</button>
+                                </div>
+                                <!-- Floating Card -->
+                                <div class="md:w-1/2 flex justify-end mt-8 md:mt-0">
+                                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 p-6 rounded-lg shadow-2xl w-64">
+                                        <div class="text-amber-500 text-[10px] font-bold uppercase mb-2">New Listing</div>
+                                        <div class="text-white font-playfair text-xl">The Penthouse</div>
+                                        <div class="text-slate-400 text-xs mt-4 flex justify-between"><span>4 Beds</span><span>$5.4M</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXAMPLE 2: INDUSTRIAL / TRADES (IRONCLAD) -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="h-px bg-slate-700 flex-1"></div>
+                        <span class="text-orange-500 font-bold uppercase tracking-widest text-xs">Style 2: Bold Small Business</span>
+                        <div class="h-px bg-slate-700 flex-1"></div>
+                    </div>
+
+                    <!-- STATIC BROWSER MOCKUP 2 -->
+                    <div class="mock-browser">
+                        <div class="browser-header">
+                            <div class="dot bg-red-500"></div>
+                            <div class="dot bg-yellow-500"></div>
+                            <div class="dot bg-green-500"></div>
+                            <div class="ml-4 bg-slate-800 text-xs text-slate-400 px-3 py-1 rounded-full flex-grow text-center font-mono">ironclad-builders.com</div>
+                        </div>
+                        <div class="relative bg-white overflow-hidden h-[500px]">
+                            <!-- Background shapes -->
+                            <div class="absolute right-0 top-0 w-1/3 h-full bg-slate-900 skew-x-[-12deg] translate-x-20"></div>
+                            
+                            <!-- Navbar -->
+                            <div class="relative z-10 flex justify-between items-center p-6 border-b border-gray-100 bg-white/95 backdrop-blur">
+                                <div class="flex items-center gap-2">
+                                    <div class="bg-orange-600 text-white p-1 rounded"><i class="fas fa-hammer"></i></div>
+                                    <div class="text-slate-900 font-black text-xl tracking-tighter uppercase">IRON<span class="text-orange-600">CLAD</span></div>
+                                </div>
+                                <div class="hidden sm:flex items-center gap-6 font-bold text-xs uppercase text-slate-800">
+                                    <span>Services</span>
+                                    <span>Projects</span>
+                                    <div class="bg-orange-600 text-white px-4 py-2 skew-x-[-12deg]"><span class="skew-x-[12deg] inline-block">Get Quote</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Hero Content -->
+                            <div class="relative z-10 px-8 pt-20 max-w-5xl mx-auto flex">
+                                <div class="md:w-2/3 space-y-6">
+                                    <div class="inline-block bg-slate-100 text-slate-600 px-3 py-1 rounded text-[10px] font-bold uppercase tracking-wide">
+                                        <i class="fas fa-star text-orange-500 mr-1"></i> Voted #1 in County
+                                    </div>
+                                    <h3 class="text-5xl md:text-6xl font-black text-slate-900 leading-none uppercase">
+                                        We Build <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">Rock Solid.</span>
+                                    </h3>
+                                    <p class="text-slate-600 max-w-md font-medium">Residential and commercial renovations done right the first time. Licensed, insured, and on time.</p>
+                                    
+                                    <div class="flex gap-4 pt-4">
+                                        <button class="bg-slate-900 text-white px-8 py-4 font-bold uppercase text-xs hover:bg-slate-800 shadow-xl shadow-slate-900/20">Start Project</button>
+                                        <div class="flex items-center gap-2 text-slate-900 font-bold">
+                                            <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center"><i class="fas fa-phone text-orange-600"></i></div>
+                                            <div class="text-xs">
+                                                <div class="text-slate-500 uppercase text-[10px]">Emergency?</div>
+                                                555-0199
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Stats Bar -->
+                            <div class="absolute bottom-0 left-0 w-full bg-slate-100 border-t border-slate-200 p-6 flex gap-12 text-slate-900">
+                                <div><div class="font-black text-2xl">15+</div><div class="text-[10px] uppercase font-bold text-slate-500">Years Exp</div></div>
+                                <div><div class="font-black text-2xl">500+</div><div class="text-[10px] uppercase font-bold text-slate-500">Projects</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXAMPLE 3: BEAUTY / SALON (VELVET) -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="h-px bg-slate-700 flex-1"></div>
+                        <span class="text-pink-300 font-bold uppercase tracking-widest text-xs">Style 3: Elegant & Minimal</span>
+                        <div class="h-px bg-slate-700 flex-1"></div>
+                    </div>
+
+                    <!-- STATIC BROWSER MOCKUP 3 -->
+                    <div class="mock-browser">
+                        <div class="browser-header">
+                            <div class="dot bg-red-500"></div>
+                            <div class="dot bg-yellow-500"></div>
+                            <div class="dot bg-green-500"></div>
+                            <div class="ml-4 bg-slate-800 text-xs text-slate-400 px-3 py-1 rounded-full flex-grow text-center font-mono">velvet-salon.com</div>
+                        </div>
+                        <div class="relative bg-[#fdf2f0] overflow-hidden h-[500px]">
+                            <!-- Decor element -->
+                            <div class="absolute top-0 right-0 w-[400px] h-full bg-[#fae8e5] rounded-l-full translate-x-32"></div>
+                            
+                            <!-- Navbar -->
+                            <div class="relative z-10 flex justify-center items-center p-8">
+                                <div class="absolute left-8 hidden sm:flex gap-6 text-xs text-stone-600 font-medium tracking-widest uppercase">
+                                    <span>Stylists</span>
+                                    <span>Treatments</span>
+                                </div>
+                                <div class="text-stone-800 font-serif italic text-3xl font-bold tracking-tight">Velvet & Vine</div>
+                                <div class="absolute right-8 text-xs text-stone-600 font-medium tracking-widest uppercase border-b border-stone-800 pb-1 cursor-pointer">Book Appointment</div>
+                            </div>
+
+                            <!-- Hero Content -->
+                            <div class="relative z-10 text-center px-8 pt-12 max-w-2xl mx-auto">
+                                <div class="text-stone-500 text-[10px] uppercase tracking-[0.4em] mb-4">Est. 2024</div>
+                                <h3 class="text-5xl md:text-6xl font-serif text-stone-800 mb-6 leading-tight">
+                                    Beauty in <br> <span class="italic text-rose-400">Every Detail.</span>
+                                </h3>
+                                <p class="text-stone-600 font-light text-sm max-w-sm mx-auto mb-8 leading-relaxed">
+                                    A sanctuary for modern self-care. Experience our signature botanical treatments in the heart of the city.
+                                </p>
+                                <button class="border border-stone-800 text-stone-800 px-8 py-3 text-xs uppercase tracking-widest hover:bg-stone-800 hover:text-white transition duration-500">View Menu</button>
+                            </div>
+
+                            <!-- Floating Image Cards -->
+                            <div class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 flex gap-4">
+                                <div class="w-32 h-40 bg-stone-300 rounded-t-xl overflow-hidden relative shadow-lg">
+                                    <div class="absolute inset-0 bg-stone-400 flex items-center justify-center text-white/50 text-xs">Image 1</div>
+                                </div>
+                                <div class="w-32 h-40 bg-rose-200 rounded-t-xl overflow-hidden relative shadow-lg -mt-8">
+                                    <div class="absolute inset-0 bg-rose-300 flex items-center justify-center text-white/50 text-xs">Image 2</div>
+                                </div>
+                                <div class="w-32 h-40 bg-stone-300 rounded-t-xl overflow-hidden relative shadow-lg">
+                                    <div class="absolute inset-0 bg-stone-400 flex items-center justify-center text-white/50 text-xs">Image 3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="py-20 bg-slate-900 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Simple, Transparent Pricing</h2>
+                <p class="mt-4 text-slate-400">Invest in an asset that pays you back.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                
+                <!-- Package 1: The Build -->
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 relative overflow-hidden shadow-xl hover:border-blue-500/50 transition duration-300">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">POPULAR</div>
+                    <h3 class="text-2xl font-bold text-white mb-2">The Complete Overhaul</h3>
+                    <p class="text-slate-400 mb-6 text-sm">Everything you need to look professional and get found.</p>
+                    
+                    <div class="flex items-baseline mb-8">
+                        <span class="text-5xl font-extrabold tracking-tight text-white">$1,499</span>
+                        <span class="ml-1 text-xl text-slate-500">/ one-time</span>
+                    </div>
+
+                    <ul class="space-y-4 mb-8 text-slate-300">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> <span>Custom 5-Page Website Design</span></li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> <span>Mobile & Tablet Responsive</span></li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> <span>Google Business Profile Optimization</span></li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> <span>Basic SEO Setup (Keywords)</span></li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> <span>Contact Forms & Map Integration</span></li>
+                    </ul>
+
+                    <a href="#contact" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition shadow-lg shadow-blue-900/50">Start My Project</a>
+                </div>
+
+                <!-- Package 2: The Care Plan -->
+                <div class="bg-slate-800/40 rounded-2xl p-8 border border-slate-700/50 flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-white mb-2">Monthly Peace of Mind</h3>
+                    <p class="text-slate-400 mb-6 text-sm">I handle the tech so you handle the business.</p>
+                    
+                    <div class="flex items-baseline mb-8">
+                        <span class="text-5xl font-extrabold tracking-tight text-white">$99</span>
+                        <span class="ml-1 text-xl text-slate-500">/ month</span>
+                    </div>
+
+                    <ul class="space-y-4 mb-8 text-slate-300">
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-3"></i> <span>Secure High-Speed Hosting</span></li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-3"></i> <span>Software & Security Updates</span></li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-3"></i> <span>1 Hour of Content Edits / Month</span></li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-3"></i> <span>Monthly Performance Report</span></li>
+                    </ul>
+
+                    <a href="#contact" class="block w-full text-center bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 rounded-lg transition">Required for Hosting</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-slate-950 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to Get Started?</h2>
+            <p class="text-slate-400 mb-8 text-lg">
+                Let's discuss how we can get your business found online. <br>
+                Send me an email and I'll get back to you within 24 hours.
+            </p>
+            
+            <div class="inline-block p-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl">
+                <a href="mailto:Venturez.ap@gmail.com" class="block bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 px-10 rounded-lg transition items-center gap-3">
+                    <i class="fas fa-envelope mr-2 text-blue-400"></i> Venturez.ap@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-500 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="text-2xl font-bold text-white tracking-tighter">A&P <span class="text-blue-500">VENTUREZ</span></span>
+                <p class="text-sm mt-2">Solo Web Presence Specialist.</p>
+            </div>
+            <div class="text-sm">
+                &copy; 2025 A&P Venturez. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
